@@ -236,13 +236,13 @@ namespace SimpleReproClient
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     //Exception in parsing json
-                    Console.WriteLine(jex.Message);
+                    Console.WriteLine(response.Content);
                     Console.ResetColor();
                 }
                 catch (Exception ex) //some other exception
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(ex.ToString());
+                    Console.WriteLine(response.Content);
                     Console.ResetColor();
                 }
 
